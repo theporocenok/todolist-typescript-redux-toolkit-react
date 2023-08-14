@@ -1,0 +1,41 @@
+.ToDo {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+
+  .addBtn {
+    width: unset;
+  }
+
+  .container {
+    height: 600px;
+
+    .empty {
+      text-align: center;
+    }
+
+    .table {
+      overflow-x: hidden;
+      height: 100%;
+
+      .body {
+        display: block;
+        overflow-x: hidden;
+        width: 100%;
+
+        .row {
+          display: flex;
+
+          .description {
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-wrap: nowrap;
+          }
+        }
+      }
+    }
+  }
+}
